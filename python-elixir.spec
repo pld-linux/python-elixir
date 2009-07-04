@@ -3,7 +3,7 @@ Summary:	Declarative layer on top of the SQLAlchemy library
 Summary(pl.UTF-8):	Warstwa nad biblioteką SQLAlchemy.
 Name:		python-%{module}
 Version:	0.6.1
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		Development/Languages/Python
 Source0:	http://pypi.python.org/packages/source/E/Elixir/Elixir-%{version}.tar.gz
@@ -14,7 +14,7 @@ BuildRequires:	rpm-pythonprov
 # if py_postclean is used
 BuildRequires:	rpmbuild(macros) >= 1.219
 #Requires:		python-libs
-Requires:	python-modules
+Requires:	python-SQLAlchemy
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
