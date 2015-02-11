@@ -3,16 +3,17 @@ Summary:	Declarative layer on top of the SQLAlchemy library
 Summary(pl.UTF-8):	Warstwa nad biblioteką SQLAlchemy.
 Name:		python-%{module}
 Version:	0.7.1
-Release:	3
+Release:	4
 License:	MIT
 Group:		Development/Languages/Python
-Source0:	http://pypi.python.org/packages/source/E/Elixir/Elixir-%{version}.tar.gz
+Source0:	https://pypi.python.org/packages/source/E/Elixir/Elixir-%{version}.tar.gz
 # Source0-md5:	5615ec9693e3a8e44f69623d58f54116
+Patch0:		sqlalchemy-0.8.patch
 URL:		http://elixir.ematia.de/trac/wiki
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
-Requires:	python-SQLAlchemy
+Requires:	python-sqlalchemy >= 0.8
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,6 +33,7 @@ zalet tradycyjnych baz danych bez straty wygody obiektów Pythonowych.
 
 %prep
 %setup -q -n Elixir-%{version}
+%patch0 -p1
 
 %build
 CFLAGS="%{rpmcflags}" \

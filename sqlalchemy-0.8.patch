@@ -1,0 +1,15 @@
+http://stackoverflow.com/questions/14201210/impossible-to-initialize-elixir
+
+--- Elixir-0.7.1/elixir/entity.py~	2009-11-13 21:50:38.000000000 +0200
++++ Elixir-0.7.1/elixir/entity.py	2015-02-11 21:04:09.963209077 +0200
+@@ -15,8 +15,9 @@
+ from sqlalchemy import Table, Column, Integer, desc, ForeignKey, and_, \
+                        ForeignKeyConstraint
+ from sqlalchemy.orm import MapperExtension, mapper, object_session, \
+-                           EXT_CONTINUE, polymorphic_union, ScopedSession, \
++                           EXT_CONTINUE, polymorphic_union, \
+                            ColumnProperty
++from sqlalchemy.orm import scoped_session as ScopedSession
+ from sqlalchemy.sql import ColumnCollection
+ 
+ import elixir
