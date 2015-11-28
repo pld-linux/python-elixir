@@ -3,7 +3,7 @@ Summary:	Declarative layer on top of the SQLAlchemy library
 Summary(pl.UTF-8):	Warstwa nad biblioteką SQLAlchemy.
 Name:		python-%{module}
 Version:	0.7.1
-Release:	4
+Release:	5
 License:	MIT
 Group:		Development/Languages/Python
 Source0:	https://pypi.python.org/packages/source/E/Elixir/Elixir-%{version}.tar.gz
