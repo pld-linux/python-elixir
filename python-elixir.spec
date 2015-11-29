@@ -12,7 +12,7 @@ Patch0:		sqlalchemy-0.8.patch
 URL:		http://elixir.ematia.de/trac/wiki
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 Requires:	python-sqlalchemy >= 0.8
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
