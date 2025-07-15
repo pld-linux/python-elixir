@@ -33,7 +33,7 @@ zalet tradycyjnych baz danych bez straty wygody obiektów Pythonowych.
 
 %prep
 %setup -q -n Elixir-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %py_build
